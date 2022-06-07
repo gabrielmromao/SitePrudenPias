@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Noto Sans Mono', monospace;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-image: url(/img/fundosite.jpg);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+    height: auto;
+
+    width: 100%;
+}
+
+header{
+    background-color: #032842;
+
+    width: 100%;
+
+    margin: 0px;
+
+    padding: 0px;
+
+    height: 120px;
+    padding: 0px 0px 0px 120px;
+} 
+
+header nav ul {
+    display: flex;
+
+    font-size: 2rem;
+
+    justify-content: space-around;
+
+    padding: 40px 0px 0px 0px;
+
+    font-size: 20px;    
+}
+a{
+    color: #fff;
+    font-size: 25px;
+    
+}
+h1{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1, p{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+section#pedras{
+    background-color: #032842;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+.logo{
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height: 120px;
+    z-index: 1000;
+    align-items: center;
+    
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav#one{
+     flex-direction: column;
+     display: flex;
+     height: auto;
+     width: 100%;
+     justify-content: space-around;
+     align-items: center;
+}
+nav#two{
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.caixa{
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 0px;
+    text-align: center;
+}
+.ft img{
+    max-width: 100%;
+    max-height: 200px;
+    width: 100%;   
+    
+}
+footer{
+    height: 30px;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin: 0px 25px 50px 0px; 
+    right: 20px;
+    
+}
+footer#whats {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    
+  }
+  
+footer#whats img {
+    max-width: 100%;
+  }
+.ft{
+    display: flex;
+    flex-direction: row;
+}
+.caixa p{
+    display: inline-block;
+    flex-wrap: wrap;
+    color: #fff;
+    
+}
+section#historia{
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+section #historia p
+{
+    font-size: 17px;
+    font-family: Tahoma;
+    color: #032842;
+    
+}
+section #historia h1
+{
+    font-family: Verdana;
+    color: #032842;
+}
+#galeriaslide
+{
+    background-color: #032842;
+}
+.geral
+{
+    display: flex;
+    width: 100vw;
+    flex: 1;
+    border: 1px solid black;
+}
+#localizacao{
+    width: 50%;
+    margin: 0px 0px;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+section #mapa 
+{
+    
+    width: 50%;
+}
+section #localizacao .infos
+{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    
+}
+.info
+{
+    flex-grow: 1;
+    width: 100%;
+    height: 30%;
+    background-color: #032842;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 8px 0px #000;
+    color: #fff;
+}
+
+
+
+/*Criando banner animado somente com css */
+.container {
+    margin: 0px auto;
+    padding-bottom: 28%;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    box-shadow: 0px 0px 10px 0px #777;
+}
+
+.photoWrapper {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.photo {
+    height:auto;
+    width: 100%;
+}
+
+p.photoDescr {
+    position: absolute;
+    top: 250px;
+    right: -50px;
+    background-color: rgba(255, 0, 79, 0.62);
+    margin: 10px;
+    width: 70%;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 22px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+p.photoDescr img {
+    width: 35%;
+}
+
+@keyframes round {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.photoWrapper:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.photoWrapper:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.photoWrapper:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.photoWrapper:nth-child(4) {
+    animation-delay: 12s;
+}
+@media (max-width: 1023px)
+{
+   header
+   {
+       width: 100%;
+       height: 15%;
+   }
+}
